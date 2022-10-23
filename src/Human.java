@@ -1,7 +1,7 @@
 public class Human {
-    int yearOfBirth;
-    String name;
-    String town;
+    private int yearOfBirth;
+     String name;
+    private String town;
     String job;
 
     public Human(int yearOfBirth, String name, String town, String job) {
@@ -41,5 +41,21 @@ public class Human {
             job = "Информация не указана";
         }
         return job;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTown(String town) {
+        this.town = town;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
     }
 }
